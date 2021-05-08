@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>To-Do List</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+  <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+
+</head>
+
+<body>
+  <h1>To-Do List</h1>
+  <form action="/createTodo" method="POST">
+    <input type="text" placeholder="Enter to-do item" name="todoItem">
+    <input type="submit">
+  </form>
+  <section class="todos">
+    <ul class="todosList">
+      <% for (let i=0; i < todos.length; i++) {%>
+        <li class="todoItem">
+          <% if (todos[i].done) {%>
+            <span class="todoText done">
+              <%= todos[i].text %>
+            </span><span class="markDone"><i class="fa fa-square"></i></span>
+            <% } else {%>
+              <span class="todoText">
+                <%= todos[i].text %>
+              </span><span class="markDone"><i class="far fa-square"></i></span>
+              <% } %>
+                <span class="markDelete"><i class="fa fa-trash"></i></span>
+        </li>
+        <% } %>
+    </ul>
+  </section>
+  <script src='js/script.js'></script>
+</body>
+
+</html>

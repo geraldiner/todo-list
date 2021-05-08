@@ -1,0 +1,9 @@
+.markDelete, .markDone {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #666;
+}
