@@ -1,21 +1,31 @@
 # To-Do List CRUD app
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs o we can actually see our work!).
+Following from [the last CRUD app I worked on](https://acnh-quotes.herokuapp.com), I tried to create this simple To-Do List from scratch and from memory, while following along with [LearnWithLeon](https://twitch.tv/learnwithleon).
+
+There is a simple form to add a single to-do item, a checkbox to mark it as done or not done, and a trashcan to delete the to-do item. It also lets you know how many items are left to do on the To-Do List.
  
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+**Link to project:** https://tododo-list.herokuapp.com
  
 # How It's Made:
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** HTML, CSS, JavaScript, NodeJS, ExpressJS, MongoDB
  
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not oo much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+The To-Do List is a simple NodeJS app with the information about the to-do list stored in MongoDB.
+
+It follows in the CRUD form:
+- Create - adds a to-do item to the list
+- Read - gets the information from the database to display on the webpage using an `ejs` template
+- Update - updates each to-do item as done/not done with a click of the checkbox
+- Delete - deletes a to-do item if the trashcan is clicked
+
+On the client-side, JavaScript handles the `click` events for the checkboxes and trashcans. When clicked, the appropriate request (`delete` for trashcan, `put` for checkboxes) will be sent to my server-side JavaScript to connect to MongoDB and either delete the item or set its 'done' state appropriately.
  
 # Optimizations
-(optional)*
- 
-You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but lso functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+The major issue with this To-Do List is that it's one to-do list for **everyone** on the internet. I know LearnWithLeon covers authentication with Microsoft authentication, but haven't gotten that far yet. It would be interesting to try out different authentication handlers, like Google Passport, but that might be for another day.
  
 # Lessons Learned:
  
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have hose *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+I think my greatest "fist pump in the air" moment was getting the checkbox functionality working. I'd deviated from what LearnWithLeon was doing by using an icon, which could be clicked to mark the to-do item as done or not done based on its current state.
+
+I knew that I was already using a `class` of `.done` on items that were marked "done", so I had to check whether or not that to-do item had it or not. When making the `PUT` request, I would just have to send the opposite of the current state to make it the opposite.
  
 # Other Projects:
 Take a look at other cool stuff I've worked on:
