@@ -5,7 +5,7 @@ const PORT = 8000
 const MongoClient = require('mongodb').MongoClient
 
 let db,
-  dbConnectionStr = 'mongodb+srv://demo:demo@cluster0.rphti.mongodb.net/todo-list?retryWrites=true&w=majority',
+  dbConnectionStr = process.env.DB_URI_STRING,
   dbName = 'todo-list'
 
 MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
