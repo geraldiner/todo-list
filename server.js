@@ -18,12 +18,10 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-app.get('/', (request, response) => {
-  db.collection('todo-list').find().toArray()
-    .then(results => {
-      response.render('index.ejs', { todos: results })
-    })
-    .catch(error => console.error(error))
+app.get('/', async (request, response) => {
+  const todoItems = await db.collection('todo-list').find().toArray()
+  const itemsLeft = await db.collection('todo-list').countDocuments({ done: false })
+  response.render('index.ejs', { todos: todoItems, left: itemsLeft })
 })
 
 app.post('/createTodo', (request, response) => {

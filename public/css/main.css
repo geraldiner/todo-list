@@ -3,7 +3,7 @@
   cursor: pointer;
 }
 
-.done {
+.todoText.done {
   text-decoration: line-through;
-  color: #666;
+  color: #666 !important;
 }
