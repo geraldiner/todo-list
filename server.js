@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
-const PORT = 8000
-
+const dotenv = require('dotenv').config()
 const MongoClient = require('mongodb').MongoClient
+const PORT = 8000
 
 let db,
   dbConnectionStr = process.env.DB_URI_STRING,
