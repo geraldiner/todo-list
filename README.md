@@ -1,11 +1,9 @@
 # To-Do List CRUD app
-Following from [the last CRUD app I worked on](https://acnh-quotes.herokuapp.com), I tried to create this simple To-Do List from scratch and from memory, while following along with [LearnWithLeon](https://twitch.tv/learnwithleon).
+Following from [the last CRUD app I worked on](https://github.com/geraldiner/acnh-quotes), I tried to create this simple To-Do List from scratch and from memory, while following along with [LearnWithLeon](https://twitch.tv/learnwithleon).
 
 There is a simple form to add a single to-do item, a checkbox to mark it as done or not done, and a trashcan to delete the to-do item. It also lets you know how many items are left to do on the To-Do List.
- 
-**Link to project:** https://tododo-list.herokuapp.com
- 
-# How It's Made:
+  
+## How It's Made
 **Tech used:** HTML, CSS, JavaScript, NodeJS, ExpressJS, MongoDB
  
 The To-Do List is a simple NodeJS app with the information about the to-do list stored in MongoDB.
@@ -18,21 +16,15 @@ It follows in the CRUD form:
 
 On the client-side, JavaScript handles the `click` events for the checkboxes and trashcans. When clicked, the appropriate request (`delete` for trashcan, `put` for checkboxes) will be sent to my server-side JavaScript to connect to MongoDB and either delete the item or set its 'done' state appropriately.
  
-# Optimizations
+## Optimizations
 The major issue with this To-Do List is that it's one to-do list for **everyone** on the internet. I know LearnWithLeon covers authentication with Microsoft authentication, but haven't gotten that far yet. It would be interesting to try out different authentication handlers, like Google Passport, but that might be for another day.
  
-# Lessons Learned:
+## Lessons Learned
  
 I think my greatest "fist pump in the air" moment was getting the checkbox functionality working. I'd deviated from what LearnWithLeon was doing by using an icon, which could be clicked to mark the to-do item as done or not done based on its current state.
 
 I knew that I was already using a `class` of `.done` on items that were marked "done", so I had to check whether or not that to-do item had it or not. When making the `PUT` request, I would just have to send the opposite of the current state to make it the opposite.
  
-# Other Projects:
-Take a look at other cool stuff I've worked on:
- 
-**Animal Crossing BGM IRL:** <a href='https://github.com/geraldiner/acnh-bgm-irl' target='_blank'>https://github.com/geraldiner/acnh-bgm-irl</a>
- 
-**Hide & Reveal Information Map:** <a href='https://github.com/geraldiner/hide-reveal' target='_blank'>https://github.com/geraldiner/hide-reveal</a
 ## Other Projects
 
 Check out other stuff I've worked on:
