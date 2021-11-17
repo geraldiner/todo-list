@@ -32,13 +32,16 @@ Take a look at other cool stuff I've worked on:
  
 **Animal Crossing BGM IRL:** <a href='https://github.com/geraldiner/acnh-bgm-irl' target='_blank'>https://github.com/geraldiner/acnh-bgm-irl</a>
  
-**Hide & Reveal Information Map:** <a href='https://github.com/geraldiner/hide-reveal' target='_blank'>https://github.com/geraldiner/hide-reveal</a## Other Projects
+**Hide & Reveal Information Map:** <a href='https://github.com/geraldiner/hide-reveal' target='_blank'>https://github.com/geraldiner/hide-reveal</a
+## Other Projects
 
 Check out other stuff I've worked on:
 
 **Minute To Win It Games API & Wiki**: https://github.com/geraldiner/min-to-win
 
 **Rehabitter:** https://github.com/geraldiner/rehabitter
+
+**Snapchat Clone:** https://github.com/geraldiner/snapchat-clone
 
 **K.K. Radio:** https://github.com/geraldiner/kk-radio
 
