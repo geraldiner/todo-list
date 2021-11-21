@@ -25,6 +25,7 @@ I think my greatest "fist pump in the air" moment was getting the checkbox funct
 
 I knew that I was already using a `class` of `.done` on items that were marked "done", so I had to check whether or not that to-do item had it or not. When making the `PUT` request, I would just have to send the opposite of the current state to make it the opposite.
  
+
 ## Other Projects
 
 Check out other stuff I've worked on:
@@ -36,5 +37,3 @@ Check out other stuff I've worked on:
 **Snapchat Clone:** https://github.com/geraldiner/snapchat-clone
 
 **K.K. Radio:** https://github.com/geraldiner/kk-radio
-
-**Interactive Piano:** https://github.com/geraldiner/piano
