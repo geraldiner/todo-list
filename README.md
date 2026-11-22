@@ -24,25 +24,6 @@ The major issue with this To-Do List is that it's one to-do list for **everyone*
 I think my greatest "fist pump in the air" moment was getting the checkbox functionality working. I'd deviated from what LearnWithLeon was doing by using an icon, which could be clicked to mark the to-do item as done or not done based on its current state.
 
 I knew that I was already using a `class` of `.done` on items that were marked "done", so I had to check whether or not that to-do item had it or not. When making the `PUT` request, I would just have to send the opposite of the current state to make it the opposite.
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 🚀 Other Projects
 
 Check out other stuff I've worked on:
